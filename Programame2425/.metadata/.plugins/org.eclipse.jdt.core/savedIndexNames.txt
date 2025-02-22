@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+E:\Classe\DAM\1r\Programame\programame-Eloy-Garcia-Rio\Programame2425\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-981796693.index
-1259150716.index
