@@ -17,5 +17,9 @@ public class p456 {
 				
 			System.out.println(Math.round(Math.ceil((1.00 * Integer.parseInt(parts[2]) / (Integer.parseInt(parts[0]) * Integer.parseInt(parts[1]))))));
 		}
+<<<<<<< HEAD
+		sc.close();
+=======
+>>>>>>> branch 'main' of https://github.com/DAM-DAW-PROGRAMACIO/programame-Eloy-Garcia-Rio
 	}
 }
