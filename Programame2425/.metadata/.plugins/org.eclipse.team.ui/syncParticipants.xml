@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syncparticipants>
+<participant displayName="Git (Programame242...Programame2425)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1740249271374">
+<data forceFetch="false" root="false">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="Programame242...Programame2425" startupAction="none">
+<org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.jdt.ui.modelProvider">
+<mappings>
+<resources resourcePath="/Programame2425" resourceType="4"/>
+</mappings>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
+<org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS modelProviderId="org.eclipse.core.resources.modelProvider">
+<mappings>
+<resources resourcePath="/Programame2425" resourceType="4"/>
+</mappings>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
+</org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
+<gitSynchronizeData container="C:/Users/Eloy GR/git/programame-Eloy-Garcia-Rio/Programame2425" dstRev="refs/heads/main" inludeLocal="true" srcRev="HEAD">
+<includedPaths>
+<path path="C:/Users/Eloy GR/git/programame-Eloy-Garcia-Rio/Programame2425"/>
+</includedPaths>
+</gitSynchronizeData>
+</data>
+</participant>
+</syncparticipants>
