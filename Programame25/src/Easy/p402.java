@@ -7,18 +7,18 @@ public class p402 {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner (System.in);
-		String line = sc.nextLine();
+		long nPiezas = sc.nextLong();
 		
-		while (line != null && !line.startsWith("0")) {
-			int result = 0;
+		while (nPiezas > 0) {
+			long result = 0;
 			
-			for (int i = 1; i <= Integer.parseInt(line) / 2; i++) {
-				if (Integer.parseInt(line) % i == 0 && result <= Integer.parseInt(line) / i)
-					result = i;
+			for (long i = 1; i <= nPiezas / 2; i++) {
+				if (!(nPiezas % i == 0 && result <= nPiezas / i)) continue;
+				else result = i;		
 			}
-			
 			System.out.println(result);
-			line = sc.nextLine();
+			nPiezas = sc.nextLong();
 		}
+		sc.close();
 	}
 }

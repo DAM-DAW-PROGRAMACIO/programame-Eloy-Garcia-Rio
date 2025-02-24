@@ -1,26 +1,26 @@
 package Easy;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class p164 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
-		String line = br.readLine();
+		Scanner sc = new Scanner (System.in);
+		long x1 = sc.nextLong();
+		long y1 = sc.nextLong();
+		long x2 = sc.nextLong();
+		long y2 = sc.nextLong();
 		
-		while (line != null) {
-			String coords[] = line.split(" ");
-			int coordsInt[] = new int[coords.length];
+		while (x1 <= x2 && y1 <= y2) {
 			
-			for (int i = 0; i < coords.length; i++)
-				coordsInt[i] = Integer.parseInt(coords[i]);
+			System.out.println((x2 - x1) * (y2 - y1));
 			
-			if (coordsInt[0] <= coordsInt[2] || coordsInt[1] <= coordsInt[3])
-				System.out.println((coordsInt[2] - coordsInt[0]) * ( coordsInt[3] - coordsInt[1]));
-			
-			line = br.readLine();
+			x1 = sc.nextLong();
+			y1 = sc.nextLong();
+			x2 = sc.nextLong();
+			y2 = sc.nextLong();
 		}
+		sc.close();
 	}
 }

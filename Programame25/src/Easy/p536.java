@@ -56,11 +56,11 @@ public class p536 {
 
 		while (true) {
 
-<<<<<<< HEAD
+
 			if (linea.equals("") || Integer.parseInt(linea) <= 0)
-=======
+
 			if (linea.equals("") || linea.equals("0"))
->>>>>>> branch 'main' of https://github.com/DAM-DAW-PROGRAMACIO/programame-Eloy-Garcia-Rio
+
 				break;
 			else {
 				
