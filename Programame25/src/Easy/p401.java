@@ -2,7 +2,7 @@ package Easy;
 
 import java.util.Scanner;
 
-public class p340 {
+public class p401 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -10,15 +10,16 @@ public class p340 {
 		long casos = sc.nextLong();
 		
 		for (long i = 0; i < casos; i++) {
+				
+			String p1 = sc.next();
+			String p2 = sc.next();
 			
-			long x = sc.nextLong();
-			long y = sc.nextLong();
+			boolean esTrifelio = false;
 			
-			long result = x * (y + 1) + y * (x + 1);
-			
-			System.out.println(result);
-			
+			if (esTrifelio)
+				System.out.println("SI");
+			else
+				System.out.println("NO");
 		}
-		sc.close();
 	}
 }

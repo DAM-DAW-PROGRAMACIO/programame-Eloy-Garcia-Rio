@@ -13,12 +13,13 @@ public class p000 {
 
 		String line = sc.nextLine();
 		
-		while (line != null) {
+			while (line != null) {
 			
 			
 			
 			line = sc.nextLine();
+			}
 		}
+		sc.close();
 	}
-}
 }

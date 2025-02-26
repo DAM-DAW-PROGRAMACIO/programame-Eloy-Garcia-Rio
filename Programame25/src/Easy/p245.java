@@ -6,37 +6,52 @@ public class p245 {
 
 	public static void main(String[] args) throws Exception {
 		Scanner sc = new Scanner(System.in);
-		long line = sc.nextLong();
+		int line = sc.nextInt();
 
 		while (line != 0) {
 
-			boolean esDalton = false;
-			long start = sc.nextLong();
-			long next = sc.nextLong();
-			long counter = 2;
-
-			while (counter < line) {
-				esDalton = start < next;
-
-				if (!esDalton) {
-					esDalton = false;
-					break;
-				}
-
-				start = next;
-				next = sc.nextLong();
-				counter++;
-			}
-
-			if (esDalton) {
-				System.out.println("DALTON");
-				line = sc.nextLong();
-			} else {
+			long daltons[] = new long[line];
+			
+			for (int i = 0; i < line; i++)
+				daltons[i] = sc.nextLong();
+			
+			if (!EsDaltonAsc(daltons) && !EsDaltonDesc(daltons)) {
 				System.out.println("DESCONOCIDOS");
 				sc.nextLine();
-				line = sc.nextLong();
-			}
+				line = sc.nextInt();
+				} else {
+					System.out.println("DALTON");
+					line = sc.nextInt(); 
+				}
 		}
-		sc.close();
+		sc.close();	
+	}
+	
+	public static boolean EsDaltonAsc(long t[]) {
+		
+		boolean result = false;
+		
+		for (int i = 1; i < t.length; i++) {
+			
+			result = t[i-1] < t[i];
+			if (!result)
+				break;
+		}
+		
+		return result;
+	}
+	
+	public static boolean EsDaltonDesc(long t[]) {
+		
+		boolean result = false;
+		
+		for (int i = 1; i < t.length; i++) {
+			
+			result = t[i-1] > t[i];
+			if (!result)
+				break;
+		}
+		
+		return result;
 	}
 }

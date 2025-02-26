@@ -2,7 +2,7 @@ package Easy;
 
 import java.util.Scanner;
 
-public class p340 {
+public class p241 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
@@ -11,14 +11,13 @@ public class p340 {
 		
 		for (long i = 0; i < casos; i++) {
 			
-			long x = sc.nextLong();
-			long y = sc.nextLong();
+			long hojas = sc.nextLong();
 			
-			long result = x * (y + 1) + y * (x + 1);
-			
-			System.out.println(result);
-			
-		}
+			if (hojas < 3)
+				System.out.println("IMPOSIBLE");
+			else
+				System.out.println(hojas % 3 );			
+		}		
 		sc.close();
 	}
 }
