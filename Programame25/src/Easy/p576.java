@@ -22,7 +22,11 @@ public class p576 {
 			long horas = totalSegundos / 60;
 			
 			System.out.printf("%02d:%02d:%02d\n", horas, minutos, segundos);
+<<<<<<< HEAD
+			sc.nextLong();	
+=======
 			sc.nextLine();	
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 		}
 		sc.close();
 	}

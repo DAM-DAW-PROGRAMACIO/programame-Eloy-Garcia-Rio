@@ -24,8 +24,11 @@ public class p608 {
 				}
 				else if (temp > 6)
 					tAviso++;
+<<<<<<< HEAD
+=======
 				else
 					continue;
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 			}
 			
 			System.out.println(nAvisos);		

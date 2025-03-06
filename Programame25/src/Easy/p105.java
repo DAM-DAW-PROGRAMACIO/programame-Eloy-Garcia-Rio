@@ -1,13 +1,27 @@
 package Easy;
 
 import java.util.Scanner;
+<<<<<<< HEAD
+=======
 import java.util.TreeMap;
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 
 public class p105 {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner (System.in);
+<<<<<<< HEAD
+		String dias[] = {"MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO", "DOMINGO"};
+		
+		while (!sc.hasNext("-1")) {
+			double totalCaja = 0;
+			double recaudacion[] = new double[dias.length];
+			
+			for (int i = 0; i < dias.length; i++) {
+				recaudacion[i] = Double.parseDouble(sc.nextLine());
+				totalCaja += recaudacion[i];				
+=======
 		String cajaDia = sc.nextLine();
 		String dias[] = {"MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO", "DOMINGO"};
 		double recaudacion[] = new double[6];
@@ -23,15 +37,21 @@ public class p105 {
 					totalCaja += Double.parseDouble(cajaDia);
 				
 				cajaDia = sc.nextLine();
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 			}
 			
 			String maxCaja = MaxCaja(recaudacion, dias);
 			String minCaja = MinCaja(recaudacion, dias);
 			String domingo = MejorDomingo(recaudacion, totalCaja);
 			
+<<<<<<< HEAD
+			System.out.printf("%s %s %s\n", maxCaja, minCaja, domingo);
+			
+=======
 			System.out.println(maxCaja + " " + minCaja + " " + domingo);
 			
 			cajaDia = sc.nextLine();
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 		}
 		sc.close();
 	}
@@ -40,6 +60,15 @@ public class p105 {
 		String result = "EMPATE";
 		double max = Double.MIN_VALUE;
 		
+<<<<<<< HEAD
+		for (int j = 0; j < t.length; j++) {
+			if (max == r[j])
+				break;
+			else if (max < r[j]) {
+				result = t[j];
+				max = r[j];
+			}
+=======
 		for (int j = 0; j < 6; j++) {
 			if (max == r[j])
 				break;
@@ -49,6 +78,7 @@ public class p105 {
 			}
 			else
 				continue;
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 		}
 		
 		return result;
@@ -58,17 +88,26 @@ public class p105 {
 		String result = "EMPATE";
 		double min = Double.MAX_VALUE;
 		
+<<<<<<< HEAD
+		for (int j = 0; j < t.length; j++) {
+=======
 		for (int j = 0; j < 6; j++) {
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 			if (min == r[j])
 				break;
 			else if (min > r[j]) {
 				result = t[j];
 				min = r[j];
 			}
+<<<<<<< HEAD
+		}
+	
+=======
 			else
 				continue;
 		}
 		
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
 		return result;
 	}
 	
@@ -82,3 +121,7 @@ public class p105 {
 	}
 	
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> f02d0a2a8e45d5632a5418d9440059d380dd1379
